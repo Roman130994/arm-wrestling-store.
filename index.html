@@ -3,144 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arm Wrestling Equipment</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hobbyt Equipment</title>
     <style>
-        :root {
-            --primary-color: #00A9E0; /* Голубий */
-            --secondary-color: #ffffff; /* Білий */
-            --text-color: #333333;
-        }
-        
         body {
+            background-color: #121212;
+            color: #ffffff;
             font-family: Arial, sans-serif;
-            background-color: var(--secondary-color);
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
+            background-color: #d32f2f;
             padding: 20px 0;
             text-align: center;
         }
 
         header h1 {
+            color: white;
+            font-size: 36px;
             margin: 0;
         }
 
-        nav {
+        section {
+            padding: 60px 20px;
+        }
+
+        h2 {
+            color: #d32f2f;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .product-list {
             display: flex;
             justify-content: center;
-            background-color: #f1f1f1;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
-        nav a {
-            padding: 10px 20px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        nav a:hover {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-        }
-
-        .container {
+        .product {
+            background-color: #333333;
             padding: 20px;
-        }
-
-        .page {
-            padding: 20px;
-            margin: 20px 0;
-            background-color: #f9f9f9;
+            width: 250px;
+            text-align: center;
             border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .product p {
+            color: #bbb;
+            font-size: 14px;
         }
 
         footer {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
+            background-color: #121212;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
+            color: #bbb;
         }
 
-        footer p {
-            margin: 0;
+        footer a {
+            color: #d32f2f;
+            text-decoration: none;
+            font-weight: bold;
         }
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>Arm Wrestling Equipment Store</h1>
-        <p>Specialized equipment for arm wrestling training and competitions</p>
-    </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#catalog">Catalog</a>
-        <a href="#about">About Us</a>
-        <a href="#sale">Sale</a>
-        <a href="#delivery">Delivery</a>
-    </nav>
+<header>
+    <h1>Hobbyt Equipment</h1>
+    <p>Your Ultimate Arm Wrestling Gear</p>
+</header>
 
-    <div class="container">
-        <div id="home" class="page">
-            <h2>Welcome to Our Store</h2>
-            <p>We offer a wide range of arm wrestling handles, tables, and training equipment available in Ukraine and Poland.</p>
+<section>
+    <h2>Our Products</h2>
+    <div class="product-list">
+        <div class="product">
+            <img src="handle1.jpg" alt="Arm Wrestling Handle 1">
+            <h3>Arm Wrestling Handle 1</h3>
+            <p>High-quality, durable handle for training and competitions.</p>
         </div>
-
-        <div id="catalog" class="page">
-            <h2>Catalog</h2>
-            <p>Browse our selection of arm wrestling equipment:</p>
-            <ul>
-                <li>Arm wrestling handles</li>
-                <li>Arm wrestling tables</li>
-                <li>Training tools</li>
-            </ul>
+        <div class="product">
+            <img src="handle2.jpg" alt="Arm Wrestling Handle 2">
+            <h3>Arm Wrestling Handle 2</h3>
+            <p>Perfect grip for maximum control and power.</p>
         </div>
-
-        <div id="about" class="page">
-            <h2>About Us</h2>
-            <p>We are a company focused on providing top-quality equipment for arm wrestling training and competition. Our mission is to deliver durable and reliable products for athletes in Ukraine and Poland.</p>
-        </div>
-
-        <div id="sale" class="page">
-            <h2>Sale</h2>
-            <p>Check out our special offers and discounts on arm wrestling equipment.</p>
-        </div>
-
-        <div id="delivery" class="page">
-            <h2>Delivery</h2>
-            <p>We offer fast and secure delivery to Ukraine and Poland. Contact us for more details on delivery options.</p>
-        </div>
+        <!-- Add more products as necessary -->
     </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Arm Wrestling Equipment Store. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>© 2026 Hobbyt Equipment | <a href="contact.html">Contact Us</a></p>
+</footer>
 
-    <script>
-        // JavaScript for switching languages (this could be more dynamic in a real implementation)
-        function switchLanguage(lang) {
-            if (lang === 'pl') {
-                document.querySelector('header h1').textContent = 'Sklep z wyposażeniem do armwrestlingu';
-                document.querySelector('#home h2').textContent = 'Witamy w naszym sklepie';
-                document.querySelector('#catalog h2').textContent = 'Katalog';
-                document.querySelector('#about h2').textContent = 'O nas';
-                document.querySelector('#sale h2').textContent = 'Wyprzedaż';
-                document.querySelector('#delivery h2').textContent = 'Dostawa';
-            } else {
-                document.querySelector('header h1').textContent = 'Arm Wrestling Equipment Store';
-                document.querySelector('#home h2').textContent = 'Welcome to Our Store';
-                document.querySelector('#catalog h2').textContent = 'Catalog';
-                document.querySelector('#about h2').textContent = 'About Us';
-                document.querySelector('#sale h2').textContent = 'Sale';
-                document.querySelector('#delivery h2').textContent = 'Delivery';
-            }
-        }
-    </script>
 </body>
 </html>
