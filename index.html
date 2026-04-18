@@ -14,6 +14,12 @@
             padding: 0;
         }
 
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
         header {
             background-color: #d32f2f;
             padding: 20px 0;
@@ -50,7 +56,7 @@
         }
 
         section {
-            padding: 60px 20px;
+            padding: 60px 0;
         }
 
         h2 {
@@ -58,6 +64,24 @@
             font-size: 28px;
             text-align: center;
             margin-bottom: 40px;
+        }
+
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 1s ease;
+        }
+
+        .carousel .carousel-slide {
+            flex-shrink: 0;
+            width: 100%;
         }
 
         .product-list {
@@ -115,61 +139,89 @@
 <body>
 
 <header>
-    <h1>Hobbyt Equipment</h1>
-    <p>Your Ultimate Arm Wrestling Gear</p>
+    <div class="container">
+        <h1>Hobbyt Equipment</h1>
+        <p>Your Ultimate Arm Wrestling Gear</p>
+    </div>
 </header>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#delivery">Delivery</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
+    <div class="container">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#discounts">Discounts</a>
+        <a href="#about">About Us</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
 <section id="home">
-    <h2>Welcome to Hobbyt Equipment</h2>
-    <p>We offer high-quality arm wrestling equipment, including handles, training tools, and much more. Whether you are a beginner or a professional, we have the gear to help you enhance your strength and skills.</p>
-    <img src="arm-wrestling-image.jpg" alt="Arm wrestling" style="width: 100%; max-width: 1200px; height: auto; border-radius: 8px;">
+    <div class="container">
+        <h2>Welcome to Hobbyt Equipment</h2>
+        <p>We offer high-quality arm wrestling equipment, including handles, training tools, and much more. Whether you are a beginner or a professional, we have the gear to help you enhance your strength and skills.</p>
+
+        <!-- Carousel -->
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="banner1.jpg" alt="Banner 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="banner2.jpg" alt="Banner 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="banner3.jpg" alt="Banner 3">
+            </div>
+        </div>
+
+    </div>
 </section>
 
-<section id="products">
-    <h2>Our Products</h2>
-    <div class="product-list">
-        <div class="product">
-            <img src="handle1.jpg" alt="Arm Wrestling Handle 1">
-            <h3>Arm Wrestling Handle 1</h3>
-            <p>High-quality, durable handle for training and competitions.</p>
-        </div>
-        <div class="product">
-            <img src="handle2.jpg" alt="Arm Wrestling Handle 2">
-            <h3>Arm Wrestling Handle 2</h3>
-            <p>Perfect grip for maximum control and power.</p>
-        </div>
-        <div class="product">
-            <img src="handle3.jpg" alt="Arm Wrestling Handle 3">
-            <h3>Arm Wrestling Handle 3</h3>
-            <p>Designed for intense training sessions and professional matches.</p>
+<section id="discounts">
+    <div class="container">
+        <h2>Special Discounts</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="handle1.jpg" alt="Arm Wrestling Handle 1">
+                <h3>Arm Wrestling Handle 1</h3>
+                <p>Now 20% off! High-quality, durable handle for training and competitions.</p>
+            </div>
+            <div class="product">
+                <img src="handle2.jpg" alt="Arm Wrestling Handle 2">
+                <h3>Arm Wrestling Handle 2</h3>
+                <p>Now 15% off! Perfect grip for maximum control and power.</p>
+            </div>
+            <div class="product">
+                <img src="handle3.jpg" alt="Arm Wrestling Handle 3">
+                <h3>Arm Wrestling Handle 3</h3>
+                <p>Now 25% off! Designed for intense training sessions and professional matches.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="delivery">
-    <h2>Delivery Information</h2>
-    <p>We offer fast and reliable delivery within Ukraine and Poland. All orders are processed within 1-2 business days, and you will receive tracking information for your shipment.</p>
-    <p>For international orders, delivery times and costs may vary. Please contact us for more details.</p>
+<section id="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Hobbyt Equipment is a Ukrainian-based company dedicated to providing the best arm wrestling gear for athletes of all levels. Our products are designed with quality, performance, and durability in mind. We strive to support the arm wrestling community by offering the most reliable equipment on the market.</p>
+    </div>
 </section>
 
-<section id="about">
-    <h2>About Us</h2>
-    <p>Hobbyt Equipment is a Ukrainian-based company dedicated to providing the best arm wrestling gear for athletes of all levels. Our products are designed with quality, performance, and durability in mind. We strive to support the arm wrestling community by offering the most reliable equipment on the market.</p>
+<section id="delivery">
+    <div class="container">
+        <h2>Delivery Information</h2>
+        <p>We offer fast and reliable delivery within Ukraine and Poland. All orders are processed within 1-2 business days, and you will receive tracking information for your shipment.</p>
+        <p>For international orders, delivery times and costs may vary. Please contact us for more details.</p>
+    </div>
 </section>
 
 <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions or need more information? Feel free to reach out to us!</p>
-    <p>Email: <a href="mailto:support@hobbytequipment.com">support@hobbytequipment.com</a></p>
-    <p>Phone: +380 123 456 789</p>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions or need more information? Feel free to reach out to us!</p>
+        <p>Email: <a href="mailto:support@hobbytequipment.com">support@hobbytequipment.com</a></p>
+        <p>Phone: +380 123 456 789</p>
+    </div>
 </section>
 
 <footer>
