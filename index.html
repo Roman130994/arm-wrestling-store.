@@ -26,6 +26,29 @@
             margin: 0;
         }
 
+        header p {
+            color: white;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #d32f2f;
+        }
+
         section {
             padding: 60px 20px;
         }
@@ -96,7 +119,21 @@
     <p>Your Ultimate Arm Wrestling Gear</p>
 </header>
 
-<section>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#delivery">Delivery</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Hobbyt Equipment</h2>
+    <p>We offer high-quality arm wrestling equipment, including handles, training tools, and much more. Whether you are a beginner or a professional, we have the gear to help you enhance your strength and skills.</p>
+    <img src="arm-wrestling-image.jpg" alt="Arm wrestling" style="width: 100%; max-width: 1200px; height: auto; border-radius: 8px;">
+</section>
+
+<section id="products">
     <h2>Our Products</h2>
     <div class="product-list">
         <div class="product">
@@ -109,12 +146,34 @@
             <h3>Arm Wrestling Handle 2</h3>
             <p>Perfect grip for maximum control and power.</p>
         </div>
-        <!-- Add more products as necessary -->
+        <div class="product">
+            <img src="handle3.jpg" alt="Arm Wrestling Handle 3">
+            <h3>Arm Wrestling Handle 3</h3>
+            <p>Designed for intense training sessions and professional matches.</p>
+        </div>
     </div>
 </section>
 
+<section id="delivery">
+    <h2>Delivery Information</h2>
+    <p>We offer fast and reliable delivery within Ukraine and Poland. All orders are processed within 1-2 business days, and you will receive tracking information for your shipment.</p>
+    <p>For international orders, delivery times and costs may vary. Please contact us for more details.</p>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Hobbyt Equipment is a Ukrainian-based company dedicated to providing the best arm wrestling gear for athletes of all levels. Our products are designed with quality, performance, and durability in mind. We strive to support the arm wrestling community by offering the most reliable equipment on the market.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or need more information? Feel free to reach out to us!</p>
+    <p>Email: <a href="mailto:support@hobbytequipment.com">support@hobbytequipment.com</a></p>
+    <p>Phone: +380 123 456 789</p>
+</section>
+
 <footer>
-    <p>© 2026 Hobbyt Equipment | <a href="contact.html">Contact Us</a></p>
+    <p>© 2026 Hobbyt Equipment | <a href="mailto:support@hobbytequipment.com">Contact Us</a></p>
 </footer>
 
 </body>
