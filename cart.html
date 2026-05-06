@@ -1,39 +1,164 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Корзина - Hobbyt Equipment</title>
+    <title>Корзина | Hobbyt Equipment</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="cart.html">Корзина</a></li>
-                <li><a href="about.html">Про нас</a></li>
-                <li><a href="contact.html">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Ваша корзина</h1>
-        <div class="cart-item">
-            <p>Ручка для армреслінгу</p>
-            <p>Ціна: 1200 грн</p>
-            <input type="number" value="1" min="1">
-            <button>Видалити</button>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                    <li><a href="account.html">Мій обліковий запис</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
-        <!-- Додай більше товарів за потребою -->
-        <div class="total">
-            <p>Загальна сума: 1200 грн</p>
-            <button>Оформити замовлення</button>
+    </div>
+
+    <!-- Деталі товарів у кошику -->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Товар</th>
+                <th>Кількість</th>
+                <th>Підсумок</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/product1.jpg" alt="Ручка для армреслінгу">
+                        <div>
+                            <p>Ручка для армреслінгу</p>
+                            <small>Ціна: 1200 грн</small>
+                            <br>
+                            <a href="">Видалити</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>1200 грн</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/product2.jpg" alt="Стол для армреслінгу">
+                        <div>
+                            <p>Стол для армреслінгу</p>
+                            <small>Ціна: 3500 грн</small>
+                            <br>
+                            <a href="">Видалити</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>3500 грн</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/product3.jpg" alt="Блок для тренувань">
+                        <div>
+                            <p>Блок для тренувань</p>
+                            <small>Ціна: 800 грн</small>
+                            <br>
+                            <a href="">Видалити</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>800 грн</td>
+            </tr>
+        </table>
+
+        <!-- Підсумкова вартість -->
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Підсумок</td>
+                    <td>5500 грн</td>
+                </tr>
+                <tr>
+                    <td>Податок</td>
+                    <td>1050 грн</td>
+                </tr>
+                <tr>
+                    <td>Загальна сума</td>
+                    <td>6550 грн</td>
+                </tr>
+            </table>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 Hobbyt Equipment</p>
-    </footer>
+    </div>
+
+    <!-- Футер -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Завантажте наш додаток</h3>
+                    <p>Завантажте додаток для Android та iOS.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Google Play">
+                        <img src="images/app-store.png" alt="App Store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="Hobbyt Equipment">
+                    <p>Наша мета — зробити тренування з армреслінгу доступними для всіх.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Корисні посилання</h3>
+                    <ul>
+                        <li>Купони</li>
+                        <li>Блог</li>
+                        <li>Політика повернення</li>
+                        <li>Приєднатися до партнерської програми</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Слідкуйте за нами</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2026 - Hobbyt Equipment</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
 </body>
+
 </html>
