@@ -1,38 +1,182 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobbyt Equipment - Товари для армреслінгу</title>
+    <title>Hobbyt Equipment | Магазин для армреслінгу</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="cart.html">Корзина</a></li>
-                <li><a href="about.html">Про нас</a></li>
-                <li><a href="contact.html">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Ласкаво просимо до Hobbyt Equipment</h1>
-        <p>Ваш магазин для тренувань з армреслінгу. Знайдіть найкраще обладнання для тренувань та змагань.</p>
-        <section class="featured-products">
-            <div class="product">
-                <img src="product1.jpg" alt="Ручка для армреслінгу">
-                <h2>Ручка для армреслінгу</h2>
-                <p>Ціна: 1200 грн</p>
-                <a href="product-page.html">Детальніше</a>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                        <li><a href="account.html">Мій обліковий запис</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
-            <!-- Додати більше товарів -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Hobbyt Equipment</p>
-    </footer>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Покращіть своє тренування <br> з Hobbyt Equipment!</h1>
+                    <p>Наше обладнання для армреслінгу допоможе вам досягти нових результатів на тренуваннях.</p>
+                    <a href="catalog.html" class="btn">Переглянути товари &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/image1.png" alt="Товари для армреслінгу">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Categories -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg" alt="Ручки для армреслінгу">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg" alt="Столи для тренувань">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg" alt="Обладнання для армреслінгу">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="small-container">
+        <h2 class="title">Популярні товари</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="product_details.html"><img src="images/product-1.jpg" alt="Ручка для армреслінгу"></a>
+                <h4>Ручка для армреслінгу</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>1200 грн</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="Стол для армреслінгу">
+                <h4>Стол для армреслінгу</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>3500 грн</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="Блок для тренувань">
+                <h4>Блок для тренувань</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>800 грн</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="Резина для тренувань">
+                <h4>Резина для тренувань</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>650 грн</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-5.jpg" alt="Блок для тренувань">
+            <h4>Блок для тренувань</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>800 грн</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-6.jpg" alt="Ручка для армреслінгу">
+            <h4>Ручка для армреслінгу</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>1200 грн</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Завантажте наш додаток</h3>
+                    <p>Завантажте додаток для Android та iOS.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Google Play">
+                        <img src="images/app-store.png" alt="App Store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="Hobbyt Equipment">
+                    <p>Наша мета — зробити тренування з армреслінгу доступними для всіх.</p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2026 - Hobbyt Equipment</p>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
 </body>
+
 </html>
